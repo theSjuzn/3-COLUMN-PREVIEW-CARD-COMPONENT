@@ -101,6 +101,41 @@ body {
 .suv a {
     color: var(--dark-cyan);
 }
-.luxury {
+.luxury a{
     color: var(--very-dark-cyan);
 }
+
+/* ACTIVE BUTTONS */
+
+.box a:active,
+.box a:hover {
+    color: var(--very-light-gray);
+    background-color: transparent;
+    border: 0.1em solid var(--very-light-gray);
+}
+
+/* MEDIA QUERIES */
+@media  screen and (min-width: 950px) {
+    
+.group {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    margin: 6em auto;
+}
+
+.sedan {
+    border-radius: 0.7em 0 0 0.7em;
+}
+.luxury {
+    border-radius: 0 0.7em 0.7em 0;
+}
+.box h2 {
+    margin-bottom: 1.5em;
+}
+.box p {
+    margin-bottom: 3em;
+}
+
+}
+    
